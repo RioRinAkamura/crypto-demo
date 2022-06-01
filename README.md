@@ -20,9 +20,8 @@ Go to Network tab => double click on "coins" => Accept from anywhere button
 Back to app and refresh
 ```
 
-## Unit Test
-
 ```shell
 yarn test
 ```
 
+I'm trying to learn to write unit tests
