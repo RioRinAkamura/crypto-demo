@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  /* background-color: #181a20; */
+  /* color: white; */
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -36,3 +39,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* .ant-table-thead > tr > th {
+  background: #ffca10 !important;
+}
+
+.ant-table-tbody > tr > td {
+  color: white;
+  background: #181a20 !important;
+} */
+
+.ant-spin-dot-item {
+  background-color: #ffca10 !important;
+}
+
