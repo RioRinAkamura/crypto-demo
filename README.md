@@ -16,7 +16,7 @@ Sloved it
 
 ```shell
 Right click => inspect or F12
-Go to Network tab => double click on "coins" => Accept from anywhere button
+Go to Network tab => double click on "coins" => Request temporary access to the demo server button
 Back to app and refresh
 ```
 
@@ -25,3 +25,4 @@ yarn test
 ```
 
 I'm trying to learn to write unit tests
+
