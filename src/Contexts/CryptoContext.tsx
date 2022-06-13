@@ -69,7 +69,6 @@ const UseCryptoContextProvider = (): CryptoContextValue => {
         .request(options)
         .then(function (response) {
           setCoins(response.data.data.coins);
-          console.log("response", response.data.data.coins);
         })
         .catch(function (error) {
           console.error(error);
