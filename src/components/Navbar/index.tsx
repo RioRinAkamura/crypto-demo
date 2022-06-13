@@ -23,6 +23,9 @@ const Navbar = (props: Props) => {
           <Link to="/about">
             <NavItem>About</NavItem>
           </Link>
+          <Link to="/testfwr">
+            <NavItem>Test ForwardRef</NavItem>
+          </Link>
         </Nav>
       </NavbarWrapper>
     </Wrapper>

@@ -1,9 +1,7 @@
 import { SearchOutlined } from "@ant-design/icons";
 import { Input } from "antd";
-import axios from "axios";
-import React, { FormEvent, useContext, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import styled from "styled-components";
-import { apiKey, baseUrl, proxyUrl } from "../../constants";
 import { CryptoContext } from "../../Contexts/CryptoContext";
 import Container from "../Container";
 import { Wrapper } from "../Navbar";
@@ -11,34 +9,12 @@ import { Wrapper } from "../Navbar";
 type Props = {};
 
 const SearchCoin = (props: Props) => {
-  const { setCoins, setLoading } = useContext(CryptoContext);
+  const { getCoinsSearch } = useContext(CryptoContext);
   const [searchValue, setSearchValue] = useState<string>("");
-
-  const getCoin = async (searchValue: string) => {
-    const options = {
-      method: "GET",
-      url: `${proxyUrl}${baseUrl}/coins?search=${searchValue}`,
-      headers: {
-        "x-access-token": `${apiKey}`,
-      },
-    };
-    setLoading(true);
-    await axios
-      .request(options)
-      .then(function (response) {
-        setCoins(response.data.data.coins);
-        console.log("response", response.data.data.coins);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-
-    setLoading(false);
-  };
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    getCoin(searchValue);
+    getCoinsSearch(searchValue);
   };
 
   return (

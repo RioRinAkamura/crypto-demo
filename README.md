@@ -4,7 +4,7 @@ This project was use Coinranking Api(https://developers.coinranking.com/api/docu
 
 ⚠️ Using Yarn Package Manager is recommended over npm.
 
-Start and check our example app, if you want
+Start and check example app
 
 ```shell
 yarn install

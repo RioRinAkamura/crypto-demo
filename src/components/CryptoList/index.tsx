@@ -1,5 +1,5 @@
 import { Table } from "antd";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { CryptoContext } from "../../Contexts/CryptoContext";
